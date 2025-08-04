@@ -1,0 +1,136 @@
+[versions]
+detekt = "1.23.8"
+flyway = "11.4.1"
+jsoup = "1.19.1"
+kafka = "4.0.0"
+kompendium = "4.0.1"
+kotlin = "2.1.20"
+kotlinx-datetime = "0.6.2"
+kotlinx-reactor = "1.10.1"
+kotlinx-serialization = "1.8.0"
+kotlinx-test = "1.10.1" # use carefully, adjust for the version that is used in ktor
+kover = "0.9.1"
+ktor = "3.1.3"
+lettuce = "6.6.0.BETA3"
+logback = "1.5.18"
+logstash-logback-encoder = "8.0"
+micrometer = "1.15.0-RC1"
+micrometer-context-propagation = "1.1.2"
+micrometer-reactor = "1.3.0-M1"
+micrometer-tracing-bridge-otel = "1.5.0-M3"
+mockk = "1.14.2"
+otel = "1.48.0"
+otel-logback-encoder = "2.14.0-alpha"
+otel-micrometer = "2.14.0-alpha"
+postgresql = "42.7.5"
+r2dbc-pool = "1.0.2.RELEASE"
+r2dbc-postgresql = "1.0.7.RELEASE"
+shedlock = "6.3.0"
+sonarqube = "6.0.1.5171"
+swagger-annotations = "2.2.28"
+testcontainers = "1.20.6"
+
+[libraries]
+detekt = { group = "io.gitlab.arturbosch.detekt", name = "detekt-formatting", version.ref = "detekt" }
+flyway-postgres = { group = "org.flywaydb", name = "flyway-database-postgresql", version.ref = "flyway" }
+jsoup = { group = "org.jsoup", name = "jsoup", version.ref = "jsoup" }
+kafka = { group = "org.apache.kafka", name = "kafka-clients", version.ref = "kafka" }
+kompendium = { group = "io.bkbn", name = "kompendium-core", version.ref = "kompendium" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+kotlinx-coroutines-reactor = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-reactor", version.ref = "kotlinx-reactor" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinx-datetime" }
+kotlinx-serialization-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-cbor = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-cbor", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinx-test" }
+ktor-client-call-id = { group = "io.ktor", name = "ktor-client-call-id", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-encoding = { group = "io.ktor", name = "ktor-client-encoding", version.ref = "ktor" }
+ktor-client-java = { group = "io.ktor", name = "ktor-client-java", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+ktor-server-auth = { group = "io.ktor", name = "ktor-server-auth", version.ref = "ktor" }
+ktor-server-call-id = { group = "io.ktor", name = "ktor-server-call-id", version.ref = "ktor" }
+ktor-server-compression = { group = "io.ktor", name = "ktor-server-compression", version.ref = "ktor" }
+ktor-server-config-yaml = { group = "io.ktor", name = "ktor-server-config-yaml", version.ref = "ktor" }
+ktor-server-content-negotiation = { group = "io.ktor", name = "ktor-server-content-negotiation", version.ref = "ktor" }
+ktor-server-core = { group = "io.ktor", name = "ktor-server-core", version.ref = "ktor" }
+ktor-server-metrics-micrometer = { group = "io.ktor", name = "ktor-server-metrics-micrometer", version.ref = "ktor" }
+ktor-server-netty = { group = "io.ktor", name = "ktor-server-netty", version.ref = "ktor" }
+ktor-server-openapi = { group = "io.ktor", name = "ktor-server-openapi", version.ref = "ktor" }
+ktor-server-request-validation = { group = "io.ktor", name = "ktor-server-request-validation", version.ref = "ktor" }
+ktor-server-serialization-kotlinx-cbor = { group = "io.ktor", name = "ktor-serialization-kotlinx-cbor", version.ref = "ktor" }
+ktor-server-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-server-serialization-kotlinx-xml = { group = "io.ktor", name = "ktor-serialization-kotlinx-xml", version.ref = "ktor" }
+ktor-server-status-pages = { group = "io.ktor", name = "ktor-server-status-pages", version.ref = "ktor" }
+ktor-server-swagger = { group = "io.ktor", name = "ktor-server-swagger", version.ref = "ktor" }
+ktor-server-tests = { group = "io.ktor", name = "ktor-server-test-host", version.ref = "ktor" }
+lettuce = { group = "io.lettuce", name = "lettuce-core", version.ref = "lettuce" }
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+logstash-logback-encoder = { group = "net.logstash.logback", name = "logstash-logback-encoder", version.ref = "logstash-logback-encoder" }
+micrometer = { group = "io.micrometer", name = "micrometer-core", version.ref = "micrometer" }
+micrometer-context-propagation = { group = "io.micrometer", name = "context-propagation", version.ref = "micrometer-context-propagation" }
+micrometer-reactor = { group = "io.projectreactor", name = "reactor-core-micrometer", version.ref = "micrometer-reactor" }
+micrometer-registry-prometheus = { group = "io.micrometer", name = "micrometer-registry-prometheus", version.ref = "micrometer" }
+micrometer-observation = { group = "io.micrometer", name = "micrometer-observation", version.ref = "micrometer" }
+micrometer-observation-test = { group = "io.micrometer", name = "micrometer-observation-test", version.ref = "micrometer" }
+micrometer-tracing-otel = { group = "io.micrometer", name = "micrometer-tracing-bridge-otel", version.ref = "micrometer-tracing-bridge-otel" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+otel-logback = { group = "io.opentelemetry.instrumentation", name = "opentelemetry-logback-appender-1.0", version.ref = "otel-logback-encoder" }
+otel-micrometer = { module = "io.opentelemetry.instrumentation:opentelemetry-micrometer-1.5", version.ref = "otel-micrometer" }
+otel-otlp-exporter = { module = "io.opentelemetry:opentelemetry-exporter-otlp", version.ref = "otel" }
+postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresql" }
+postgresql-r2dbc = { group = "org.postgresql", name = "r2dbc-postgresql", version.ref = "r2dbc-postgresql" }
+r2dbc-pool = { group = "io.r2dbc", name = "r2dbc-pool", version.ref = "r2dbc-pool" }
+shedlock-provider-r2dbc = { group = "net.javacrumbs.shedlock", name = "shedlock-provider-r2dbc", version.ref = "shedlock" }
+swagger-annotations = { group = "io.swagger.core.v3", name = "swagger-annotations", version.ref = "swagger-annotations" }
+testcontainers-kafka = { group = "org.testcontainers", name = "kafka", version.ref = "testcontainers" }
+testcontainers-ollama = { group = "org.testcontainers", name = "ollama", version.ref = "testcontainers" }
+testcontainers-postgres = { group = "org.testcontainers", name = "postgresql", version.ref = "testcontainers" }
+
+[bundles]
+kafka = ["kafka"]
+keydb = ["lettuce"]
+kotlinx = ["kotlinx-coroutines-reactor", "kotlinx-datetime", "kotlinx-serialization-cbor", "kotlinx-serialization-json"]
+ktor = [
+    "kompendium",
+    "ktor-client-call-id",
+    "ktor-client-content-negotiation",
+    "ktor-client-encoding",
+    "ktor-client-java",
+    "ktor-client-logging",
+    "ktor-server-auth",
+    "ktor-server-call-id",
+    "ktor-server-compression",
+    "ktor-server-config-yaml",
+    "ktor-server-content-negotiation",
+    "ktor-server-core",
+    "ktor-server-metrics-micrometer",
+    "ktor-server-netty",
+    "ktor-server-openapi",
+    "ktor-server-request-validation",
+    "ktor-server-serialization-kotlinx-cbor",
+    "ktor-server-serialization-kotlinx-json",
+    "ktor-server-serialization-kotlinx-xml",
+    "ktor-server-status-pages",
+    "ktor-server-swagger",
+]
+logback = ["logback", "logstash-logback-encoder"]
+micrometer = ["micrometer", "micrometer-reactor", "micrometer-observation", "micrometer-tracing-otel", "micrometer-context-propagation", "micrometer-registry-prometheus"]
+otel = ["otel-logback", "otel-micrometer", "otel-otlp-exporter"]
+postgres = ["flyway-postgres", "postgresql", "postgresql-r2dbc"]
+r2dbc = ["r2dbc-pool"]
+shedlock = ["shedlock-provider-r2dbc"]
+test = ["kotlin-test", "kotlinx-coroutines-test", "mockk"]
+test-ktor = ["ktor-server-tests"]
+test-micrometer = ["micrometer-observation-test"]
+test-kafka = ["testcontainers-kafka"]
+test-ollama = ["testcontainers-ollama"]
+test-postgres = ["testcontainers-postgres"]
+
+[plugins]
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+sonarqube = { id = "org.sonarqube", version.ref = "sonarqube" }

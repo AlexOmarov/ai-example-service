@@ -4,7 +4,7 @@
 # Runs with custom user, exposes main and jmx ports.
 # Uses /var/jfr and /var/dumps folders for storing profiling data and heap dumps.
 
-FROM bellsoft/liberica-runtime-container:jre-24-slim-glibc
+FROM bellsoft/liberica-runtime-container:jre-23-slim-glibc
 
 RUN addgroup --system --gid 800 appuser && \
     adduser --system --uid 800 appuser && \
